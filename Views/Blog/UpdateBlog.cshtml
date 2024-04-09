@@ -1,0 +1,28 @@
+﻿<!-- Update.cshtml -->
+@model Blog
+
+<h2>Edit/Update Blog @Model.PostTitle</h2>
+
+@using (Html.BeginForm("UpdateBlog", "Blog")) //Here "Post was also removed at the end."
+{
+    @Html.AntiForgeryToken(); //This was added
+    
+    @Html.HiddenFor(model => model.PostId)
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.PostTitle)
+        @Html.TextBoxFor(model => model.PostTitle, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.PostTitle)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.PostContent)
+        @Html.TextAreaFor(model => model.PostContent, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.PostContent)
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save Changes</button>
+}
+
+
+

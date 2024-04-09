@@ -1,0 +1,20 @@
+﻿@model Comments
+
+<h2>Edit Comment</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="CommentId" />
+    <div>
+        <lable>User Name</lable>
+        <input type="text" asp-for="CommentUsername" />
+    </div>
+    <div>
+        <lable>Date & Time</lable>
+        <input type="datetime" asp-for="CommentCreatedDate" />
+    </div>
+    <div>
+        <label>Comments:</label>
+        <textarea asp-for="Comment"></textarea>
+    </div>
+    <button type="submit">Save Changes</button>
+</form>

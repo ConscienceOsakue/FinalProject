@@ -1,0 +1,17 @@
+﻿<!-- Details.cshtml -->
+@model Blog
+
+<body class="text-center">
+    <div>
+        <h2>@Model.PostTitle</h2>
+        <p>@Model.PostContent</p>
+        <p>@Model.PostAuthor</p>
+        <p>@Model.PostId</p>
+        <p>
+            @Html.ActionLink("Create", "Blog") <!--Here the new { id = @Model.PostId }) was removed.-->
+            @Html.ActionLink("Edit", "UpdateBlog", new { id = @Model.PostId })
+            @Html.ActionLink("Delete", "DeleteBlog", new { id = @Model.PostId })
+        </p>
+    </div>
+</body>
+

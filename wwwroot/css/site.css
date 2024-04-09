@@ -1,0 +1,93 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    /*display: block; /*add this*/
+  margin-bottom: 60px;
+}
+
+ #store { /*added all this*/
+    font-size: small;
+   font-display: block;
+    text-align: center;
+    background-color: white;
+   
+}
+
+.display-6 {
+
+    list-style-type: none;
+    list-style-position: outside;
+}
+
+#calculator{
+    font-display:block;
+    
+    background-color: white;
+}
+
+a {
+    /* defines the style 
+  unvisited links */
+
+    color: red;
+    font-family: 'Georgia', serif;
+    text-decoration: none; /*used this to remove the line in the links*/
+}
+
+
+a:hover {
+    /* a link is hovered when
+  the mouse is over it */
+
+    color: blue;
+    
+}
+
+a:active {
+    /* click on the link but hasn't 
+  released the mouse button yet */
+
+   color:deepskyblue;
+    
+}
+
+
+
+
+.display-3 { /*added this*/
+    background: black;
+    text-align: center;
+    width: 100%
+    -moz-fit-content auto;
+    margin: auto;
+    color: yellow;
+    font-weight: bold;
+    border: 1px;
+}
+
+/*#book1 {
+    /*background-color: #ffffff;
+    text-align: left
+}
+
+#book2 {
+    /*background-color: #ffffff;
+    text-align: right
+}*/

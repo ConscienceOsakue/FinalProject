@@ -1,0 +1,13 @@
+﻿@model List<Comments>
+
+<h2>Comments</h2>
+<!--Creating view for displaying the comments of my blog post-->
+<ul>
+    @foreach (var ChronicleEBComments in Model)
+    {
+        <li>
+            @ChronicleEBComments.CommentUsername,<br>
+            @ChronicleEBComments.Comment
+        </li>
+    }
+</ul>

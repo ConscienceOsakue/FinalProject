@@ -1,0 +1,27 @@
+﻿<!-- Index.cshtml -->
+@model IEnumerable<Blog>
+
+<!--this this the view page that will display the blog post.-->
+<h1>Chronicles of E Bond</h1>
+
+@foreach (var blog in @Model)
+{
+    <div>
+        <h2>@blog.PostTitle</h2>
+        <p>@blog.PostAuthor</p>
+        <p>@blog.PostContent</p>
+        @if(User.IsInRole("Admin"))
+        {
+            <p>
+            @Html.ActionLink("Update", "UpdateBlog", new { id = blog.PostId })
+            @Html.ActionLink("Delete", "DeleteBlog", new { id = blog.PostId })
+            </p>
+        }
+       
+    </div>
+}
+@if (User.IsInRole("Admin"))
+{
+    @Html.ActionLink("Create New Post", "Blog") <!--Here "ChronicleEBPost" to replace "Create" that was here before-->
+}
+

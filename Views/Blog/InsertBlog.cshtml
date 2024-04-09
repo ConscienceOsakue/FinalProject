@@ -1,0 +1,34 @@
+﻿ <!-- Insert.cshtml -->
+@model Blog
+
+<h2>Create Blog Post</h2>
+
+@using (Html.BeginForm("InsertBlog", "Blog")) //Here "Post" was removed after "ChronicleEBPost".
+{
+    /*This token is used to prevent cross-site request forgery (CSRF) attacks.
+    By including an anti-forgery token in your forms, you can ensure that the
+    form submission originates from your application and not from a malicious source.*/ 
+
+    @Html.AntiForgeryToken(); //This was added
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.PostTitle)
+        @Html.TextBoxFor(model => model.PostTitle, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.PostTitle)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.PostContent)
+        @Html.TextAreaFor(model => model.PostContent, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.PostContent)
+    </div>
+
+    <button type="submit" class="btn btn-primary">Create</button>
+}
+
+
+
+   
+
+
+
