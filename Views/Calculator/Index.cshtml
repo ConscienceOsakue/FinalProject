@@ -8,59 +8,62 @@
             of Your partner and yourself.<br>Rate yourself On a scale of 1 to 10
             Kindly be Honest as possible to get an accurate Harmony
         </label><br>
-        <label>Are you Male or Female?</label><br>
-    <select name="Gender">
+        <label for="q1">Are you Male or Female?</label><br>
+    <select name="Gender"id="q1">
         <option value="Male">Male</option>
         <option value="Female">Female</option>
     </select>
     <br>
-        <label>how patient is your partner with you? (1-10)</label>
-        <input type="number" name="UserPartnerRatingPatient" min="1" max="10" required>
+    <!--Adding id's in the input using question (q) and number 1 - 10 
+    the for in the labels using same input id name for each label and input
+    this is a JavaScript code as input and labels are connected with the id and for attribute. in forms-->
+        <label for="q2">how patient is your partner with you? (1-10)</label>
+        <input type="number" id="q2" name="UserPartnerRatingPatient" min="1" max="10" required>
         <br>
-        <label>How kind has your partner been to you? (1-10)</label>
-        <input type="number" name="UserPartnerRatingKind" min="1" max="10" required>
+        <label for="q3">How kind has your partner been to you? (1-10)</label>
+        <input type="number" id="q3" name="UserPartnerRatingKind" min="1" max="10" required>
         <br>
-        <label>Has your Partner been sincerly loving towards you? (1-10)</label>
-        <input type="number" name="UserPartnerRatingLove" min="1" max="10" required>
+        <label for="q4">Has your Partner been sincerly loving towards you? (1-10)</label>
+        <input type="number" id="q4" name="UserPartnerRatingLove" min="1" max="10" required>
         <br>
-        <label>Is your partner humble? (1-10)</label>
-        <input type="number" name="UserPartnerRatingHumble" min="1" max="10" required>
+        <label for="q5">Is your partner humble? (1-10)</label>
+        <input type="number" id="q5" name="UserPartnerRatingHumble" min="1" max="10" required>
         <br>
-        <label>How respectful is your partner towards you and your family? (1-10)</label>
-        <input type="number" name="UserPartnerRatingRespectful" min="1" max="10" required>
+        <label for="q6">How respectful is your partner towards you and your family? (1-10)</label>
+        <input type="number" id="q6" name="UserPartnerRatingRespectful" min="1" max="10" required>
         <br>
-        <label>Is your partner giving towards you? (1-10)</label>
-        <input type="number" name="UserPartnerRatingGiving" min="1" max="10" required>
+        <label for="q7">Is your partner giving towards you? (1-10)</label>
+        <input type="number" id="q7" name="UserPartnerRatingGiving" min="1" max="10" required>
         <br>
-        <label>Is your partner honest with you? (1-10)</label>
-        <input type="number" name="UserPartnerRatingHonest" min="1" max="10" required>
+        <label for="q8">Is your partner honest with you? (1-10)</label>
+        <input type="number" id="q8" name="UserPartnerRatingHonest" min="1" max="10" required>
         
         
 
     <h3>Kindly Rate Your YourSelf on a Scale from 1 to 10 </h3>
-        <label>how Patient are you with your Partner? (1-10)</label>
-        <input type="number" name="UserSelfRatingPatient" min="1" max="10" required>
+        <label for="q9">how Patient are you with your Partner? (1-10)</label>
+        <input type="number" id="q9" name="UserSelfRatingPatient" min="1" max="10" required>
         <br>
-        <label>Are you kind to your partner? (1-10)</label>
-        <input type="number" name="UserSelfRatingKind" min="1" max="10" required>
+        <label for="q10">Are you kind to your partner? (1-10)</label>
+        <input type="number" id="q10" name="UserSelfRatingKind" min="1" max="10" required>
         <br>
-        <label>"How inlove are you with your Partner? (1-10)</label>
-        <input type="number" name="UserSelfRatingLove" min="1" max="10" required>
+        <label for="q11">"How inlove are you with your Partner? (1-10)</label>
+        <input type="number" id="q11" name="UserSelfRatingLove" min="1" max="10" required>
         <br>
-        <label>Are you humble? (1-10)</label>
-        <input type="number" name="UserSelfRatingHumble" min="1" max="10" required>
+        <label for="q12">Are you humble? (1-10)</label>
+        <input type="number" id="q12" name="UserSelfRatingHumble" min="1" max="10" required>
         <br>
-        <label>Do you respect your partner? (1-10)</label>
-        <input type="number" name="UserSelfRatingRespectful" min="1" max="10" required>
+        <label for="q13">Do you respect your partner? (1-10)</label>
+        <input type="number" id="q13" name="UserSelfRatingRespectful" min="1" max="10" required>
         <br>
-        <label>Are you giving to partner? (1-10)</label>
-        <input type="number" name="UserSelfRatingGiving" min="1" max="10" required>
+        <label for="q14">Are you giving to partner? (1-10)</label>
+        <input type="number" id="q14" name="UserSelfRatingGiving" min="1" max="10" required>
         <br>
-        <label>Lastly, how honest are you? (1-10)</label>
-        <input type="number" name="UserSelfRatingHonest" min="1" max="10" required>
+        <label for="q15">Lastly, how honest are you? (1-10)</label>
+        <input type="number" id="q15" name="UserSelfRatingHonest" min="1" max="10" required>
         <br>
-        
-    <button type="submit">Calculator Scores</button>
+
+    <button type="submit" id="loginbutton">Calculator Scores</button>
 }
 
 

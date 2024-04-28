@@ -11,7 +11,7 @@
         @Html.AntiForgeryToken()
 
         @Html.HiddenFor(model => model.PostId)
-        <button type="submit" class="btn btn-danger">Delete</button>
+        <button type="submit" class="btn btn-danger" id="loginbutton">Delete</button>
     }
     @Html.ActionLink("Cancel", "Index", "Blog"); <!--Here "IndexChronicleEBPost" was add after "Cancle"-->
     }

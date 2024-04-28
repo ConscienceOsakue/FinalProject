@@ -2,7 +2,7 @@
 @inject SignInManager<IdentityUser> SignInManager
 @inject UserManager<IdentityUser> UserManager
 
-<ul class="navbar-nav">
+<ul class="navbar-nav" > 
 @if (SignInManager.IsSignedIn(User))
 {
     <li class="nav-item">
@@ -16,7 +16,7 @@
 }
 else
 {
-    <li class="nav-item">
+    <li class="nav-item" id="loginpage">  <!-- Added an id here so i can call it in css file and style it-->
         <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Register">Register</a>
     </li>
     <li class="nav-item">

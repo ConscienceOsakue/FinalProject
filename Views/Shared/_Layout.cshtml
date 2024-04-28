@@ -10,9 +10,13 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Emmcnorb.styles.css" asp-append-version="true" />
+    <div id="top-layer">
+        <div id="welcome-message"><b>Welcome To Emmcn Orb, Explore Our Collection Of Books, Blog Posts And Calculator </b></div>
+        <div id="welcom-message2"><b>Faithfully connecting hearts, calculating love, offering divine reads, and nurturing souls. Checkout Our BRAND NEW Books Romance Trueness®</b></div>
+    </div>
 </head>
 <body>
-    <header>
+    <header id="Hometopnav">
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Emmcnorb</a>
@@ -44,6 +48,7 @@
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
+           
         </main>
     </div>
 

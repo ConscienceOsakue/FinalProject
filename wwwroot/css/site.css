@@ -1,93 +1,276 @@
-html {
-  font-size: 14px;
-}
+    html {
+        font-size: 14px;
+    }
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
+    @media (min-width: 768px) {
+     html {
+        font-size: 16px;
+     }
+    }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
+    .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+     box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+    }
 
-html {
-  position: relative;
-  min-height: 100%;
-}
+    html {
+        position: relative;
+        min-height: 100%;
+    }
 
 body {
     /*display: block; /*add this*/
-  margin-bottom: 60px;
+    margin-bottom: 100px;
+    color: yellow;
+    background-color: darkred;
+     /*background-image: url(/Images/rose.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;*/
+   
 }
 
- #store { /*added all this*/
-    font-size: small;
-   font-display: block;
+.bf-banner .banner-content {
+    align-items: center;
+    color: yellow;
+    /*background-image: url(/Images/rose.jpg);*/
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    width: 100%;
+    height: 500%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    
+
+}
+.bannertext:hover{
+    transform: translate(25px, 25px);
+}
+
+.product-price { /*prive of the books*/
+    color: darkred;
+    font-size: 200%;
+    position: relative;
+    top: 255px;
+    right: 200px;
+}
+
+#bf-banner a {
+    outline: none;
+    text-decoration: underline;
+    color: yellow;
+    font-size: 150%;
+}
+
+#store { /*added all this*/
+    font-size: small;
+    font-display: block;
+    text-align: center;
+    background-color: white;
+    display: flex;
+    border-radius: 20px;
+}
+#book-one {
+    width: 300px;
+    height: 250px;
+    
+    display: flex;
+    
+    color: rgba(65,62,83,.5);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    line-height: 1.2;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: center;
+    display: flex;
+    
+    margin: 50px 50px 50px 100px;
     background-color: white;
    
 }
 
-.display-6 {
-
-    list-style-type: none;
-    list-style-position: outside;
-}
-
-#calculator{
-    font-display:block;
+#book-two {
+    display: flex;
     
-    background-color: white;
-}
-
-a {
-    /* defines the style 
-  unvisited links */
-
-    color: red;
-    font-family: 'Georgia', serif;
-    text-decoration: none; /*used this to remove the line in the links*/
-}
-
-
-a:hover {
-    /* a link is hovered when
-  the mouse is over it */
-
-    color: blue;
-    
-}
-
-a:active {
-    /* click on the link but hasn't 
-  released the mouse button yet */
-
-   color:deepskyblue;
-    
-}
-
-
-
-
-.display-3 { /*added this*/
-    background: black;
+    color: rgba(65,62,83,.5);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    height: 250px;
+    margin: 50px 50px 50px 250px;
+    line-height: 1.2;
     text-align: center;
-    width: 100%
-    -moz-fit-content auto;
-    margin: auto;
-    color: yellow;
-    font-weight: bold;
-    border: 1px;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: white;
+    
+   
 }
 
-/*#book1 {
-    /*background-color: #ffffff;
-    text-align: left
+.blog-content {
+    text-align: center;
+        display: flex;
+        flex-shrink: 1; /*to shrick the size of the blog in smaller screen*/
 }
 
-#book2 {
-    /*background-color: #ffffff;
-    text-align: right
-}*/
+
+
+#container-fluid { /*This is to style the calculator*/
+    font-display: block;  
+    background-image: url(/Images/Lovecalbackgroud.png);
+    background-position: center;
+    background-size: cover;
+}
+
+
+    #loginpage{ /*This is to style the two login botton on home page*/
+       
+        
+    }
+
+#Hometopnav {
+    
+    
+   
+}
+
+    a {
+        /* defines the style 
+        unvisited links */
+
+        color: black;
+        font-family: 'Georgia', serif;
+        text-decoration: none; /*used this to remove the line in the links*/
+    }
+
+
+        a:hover {
+            /* a link is hovered when
+        the mouse is over it */
+
+            color: yellow;
+            
+        }
+
+        a:active {
+            /* click on the link but hasn't 
+        released the mouse button yet */
+
+            color: yellow;
+        }
+
+    #Hometopnav { /*Here is the css style for my home page top nav style*/
+
+     
+        text-size-adjust: 100%;
+         /*display: none;*/
+        line-height: 24px;
+        border: none;
+    
+    }
+
+#scorebackgd {
+    background-image: url(/Images/flowerlove.png);
+    background-position: center;
+    background-size: cover;
+    background-color: ghostwhite;
+    width: 300px;
+    height: 250px;
+    display: flex;
+    color: rgba(65,62,83,.5);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    
+}
+.score {
+    color: darkred;
+    font-size: 420%;
+    position: relative;
+    top: 58px;
+    left: 80px;
+}
+.scoretext {
+    text-align: center; 
+}
+.scoretx {
+    text-align: center;
+}
+
+
+
+/* This is for the Login page and the login button*/
+#loginbutton {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498DB;
+    color: #FFFFFF;
+    transition: transform 1s;
+}
+
+#button{
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: yellow;
+    transition: transform 1s;
+    transition: color 1s;
+}
+
+   #button:active {
+        transform: scale(0.5);
+      
+    }
+
+/*for the top banner that has the welcome message*/
+#top-layer {
+    display: flex;
+    position: relative;
+    top: 9.3%;
+    left: 0;
+    width: 100%;
+    height: 80px; /* Adjust height as needed */
+    background-color: ButtonShadow;/* Semi-transparent background */
+    z-index: 9999; /* Ensure the top layer is above other content */
+    overflow: hidden; /* Hide overflowing content */
+}
+
+#welcome-message {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+   transform: translate(-50%, -50%);
+    color: darkred; /* Text color */
+    font-size: 30px; /* Adjust font size as needed */
+    white-space: nowrap; /* Prevent text from wrapping */
+    /*animation: moveWelcome 3s linear infinite; /* Animation for moving the welcome message */
+}
+
+#welcom-message2 {
+    position: relative;
+    top: 110%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    color: darkred; /* Text color */
+    font-size: 20px; /* Adjust font size as needed */
+    white-space: nowrap; /* Prevent text from wrapping */
+    animation: moveWelcome 7s linear infinite; /* Animation for moving the welcome message */
+}
+
+
+    @keyframes moveWelcome {
+        0% {
+        transform: translate(-50%, -50%);
+    }
+
+    100% {
+        transform: translate(calc(-50% + 100vw), -50%); /* Move the message to the right end of the viewport */
+    }
+}

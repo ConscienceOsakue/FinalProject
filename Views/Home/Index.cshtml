@@ -1,39 +1,88 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-
-<div class="text-center">
-    <h1 class="display-3">Welcome To Emmcn Orb</h1>
-   <!-- <p>Dive into our Blog <a href= "http://localhost:11008/Identity/Account/Login?ReturnUrl=%2FBlog">Navigating relationships from a Christian perspective</a></></p>-->
-</div>
-<body>
-<div class="text-center"> 
-    <main class="container" id="store">
-        <h2 class="display-6">Book Store</h2>
-        <ul>
-        <!--added the book link with the image so when one click the picture it takes them to amazon-->
-       <!--<p id="book1">--> <li><a href="https://a.co/d/9zgaXME"> <img id="picture" src="\Images\TrophyGirlfriendfullHomepage.PNG" height="200" width="300" alt="" name="Romance Trueness"> </a></li>
-        <!--<p id="book2">--><li><a href ="https://a.co/d/91KrlQx"> <img id="picture" src="\Images\BoyfriendFullHomepage.png" height="200" width="300" alt="" name="Romance Trueness"></a></li>
-        </ul>
-
-        <!-- DELETE this link Later <p>Buy Now <a href="https://a.co/d/91KrlQx"><b>Romance Trueness</b> Ultimate guide becoming her Boyfriend</a></p> -->
-    </main>  
-    </body>
-    <div>
-
+<html lang="en">
+    <head>
+ <!-- BRAND NEW — Romance Trueness® Welcome To Emmcn Orb Relationships LEARN MORE!-->
+        </head>
+    <body class="font-sans antialiased bannerShown">
+      <div class="bf-banner" id="bf-banner">
+    <div class="banner-content" id="bf-banner">
+        <a href="https://www.amazon.com/stores/author/B0BQVLHMSX/allbooks?ingress=0&visitId=d80fdb98-ca9a-41fc-9952-6d6f565612fe&ref_=ap_rdr">Shop Our Books Here</></a>
     </div>
-    <div class="container" id="nav">
-
-
     </div>
-    <div class="text-lg-center">
-    <main class="container" id="calculator">
-                <h3 class="display-8">Love Calculator</h3>
-        <a href="http://localhost:11008/Identity/Account/Login?ReturnUrl=%2FCalculator"> <img id="picture" src="\Images\Caculator.png" height="200" width="300" alt="" name="Love Calculator"></a>
-        <p>Calculate the compatablity of your relationship with your Patner</p>
-        <p>Answer a few simple questions and receive personalized Score</p>
-        <!-- <p>Dive into our Blog <a href= "http://localhost:11008/Identity/Account/Login?ReturnUrl=%2FBlog">Navigating relationships from a Christian perspective</a></></p>-->
-    </main>
-
+        <main>
+            <main class="containe" id="store">
+            <div class="container-fluid" id="book-one">
+            <a href="https://a.co/d/91KrlQx"><img id="book-one-img" src="/Images/TrophyGirlfriendfullHomepage.PNG" height="200" width="300" alt="" name="#" x-on:click.prevent="activeCategory = 'Women'" x-bind:class="activeCategory == 'Women' ? 'active' : ''"><h3>For Women</h3></a>
+                <div class="product-price">
+                    <label>$5.99</label>
+                    </div>
+                    </div>
+                    <div class="container-fluid" id="book-two">
+            <a href="https://a.co/d/9zgaXME"><img id="book-img" src="/Images/BoyfriendFullHomepage.png" height="200" width="300" alt="" name="#" x-on:click.prevent="activeCategory = 'Men'" x-bind:class="activeCategory == 'Men' ? 'active' : ''"><h3>For Men</h3></a>
+                    <div class="product-price">
+                        <label>$6.99</label>
+                    </div>
+                    </div>
+            </main>
     
-</div>
+    <div class="text-lg-center">
+    <div class="container-fluid" >
+
+         <h3 class="display-8" id="calculator">Love Calculator</h3> <!--Added Id here to style the calculator-->
+        <a href="/Calculator/Index/" target="_blank"> <!--Added a link to the video and nested the video inside the link-->
+        <video id="myFirstVideo" controls autoplay width="950" height="400">
+                <source src="/Videos/Love Calculator.mp4" type="video/mp4" onclick='width=500'>
+                <source src="/Videos/Love Calculator.ogg" type="video/ogg" onclick='width=500'>
+                <source src="/Videos/Love Calculator.webm" type="video/webm" onclick='width=500'>
+            Your browser does not support the video tag.
+        </video>
+         
+        </a>
+        </div>
+        </div>
+        <p>
+
+        </p>
+        <div>
+            <a href="/Blog/Index/" target="_blank">
+            <video id="mysecondVideo" controls autoplay width="1150" height="450">
+                    <source src="/Videos/Relationship Blog (1).mp4" type="video/mp4">
+                    <source src="/Videos/Relationship Blog (1).ogg" type="video/ogg">
+                    <source src="/Videos/Relationship Blog (1).webm" type="video/webm">
+                Your browser does not support the video tag.
+            </video>
+            </a>
+        </div>
+        <script>
+            // Get the video element
+            var video = document.getElementById("myVideo");
+
+            // Add a click event listener to the video element
+            video.addEventListener("click", function (event) {
+                // Prevent the default behavior of the video element
+                event.preventDefault();
+
+                // Check if the video is paused
+                if (video.paused) {
+                    // If paused, play the video
+                    video.play();
+                } else {
+                    // If playing, do nothing (continue playing)
+                }
+            });
+        </script>
+</main>
+<footer id="Fill-footer">
+    <div class="container-3 mx-auto">
+        <ul class="footer-links">
+            <li><a class="btn href=/aboutpage"></a></li>
+
+        </ul>
+    </div>
+</footer>
+    <!--<h1 class="display-3">Welcome To Emmcn Orb</h1>-->
+    <!--<p>Dive into our Blog <a href= "http://localhost:11008/Identity/Account/Login?ReturnUrl=%2FBlog">Navigating relationships from a Christian perspective</a></></p>-->
+</body>
+</html>

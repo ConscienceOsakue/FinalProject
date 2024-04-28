@@ -79,28 +79,7 @@ namespace FinalProject
             throw new NotImplementedException();
         }
 
-        /*public void CreateChronicleEBPost(ChronicleEBPost chronicleebpostToInsert)
-        {
-            _conn.Execute("INSERT INTO chronicleebpost (PostId, PostTitle, PostContent PostAuthor) VALUES (@id, @Title, @Content, @Author);",
-             new
-             {
-                 id = chronicleebpostToInsert.PostId,
-                 Title = chronicleebpostToInsert.PostTitle,
-                 Content = chronicleebpostToInsert.PostContent,
-                 Author = chronicleebpostToInsert.PostAuthor,
-
-             });
-        }*/
-
-        
-
-        /* IEnumerable<ChronicleEBPosts> IChronicleEBPostsRepository.GetAllChronicleEBPosts()
-         {
-             throw new NotImplementedException();
-         }*/
-
-        // Method to retrieve all blog posts
-       
+     
     }
 }
 
