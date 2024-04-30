@@ -33,7 +33,7 @@ namespace FinalProject.Controllers
         }
 
 
-        //using this to view the page of the AH Analyer
+        //using this to view the page of the AH Calculator
         [Authorize]
         public IActionResult CalculatorScores(Calculator ahanalyzeruserpartner, CalculatorUser userself)
         {
@@ -50,7 +50,7 @@ namespace FinalProject.Controllers
 
 
             //ensuring the female score is not more than the male by checking for true.
-            if ((ahanalyzeruserpartner.Gender == Gender.Female && ahanalyzeruserpartnerScore > 60) || ahanalyzeruserpartnerScore == userselfScore)  
+            if ((ahanalyzeruserpartner.Gender == Gender.Female && ahanalyzeruserpartnerScore >= 25) || ahanalyzeruserpartnerScore == userselfScore)  
             {
 
                 // Calculate average score
@@ -62,7 +62,7 @@ namespace FinalProject.Controllers
                 return View("CalculatorScores");
 
             }
-            if ((ahanalyzeruserpartner.Gender == Gender.Male && ahanalyzeruserpartnerScore >= 45) || ahanalyzeruserpartnerScore == userselfScore)
+            if ((ahanalyzeruserpartner.Gender == Gender.Male && ahanalyzeruserpartnerScore >= 15) || ahanalyzeruserpartnerScore == userselfScore)
             {
                 double userAverageScore = Math.Round(userSumPatnerSelf / 140 * 100);
 

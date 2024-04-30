@@ -1,13 +1,16 @@
 ﻿  @model List<Calculator>
-
+<div class="caption-top" id="calculatortext">
+    <h1>Harmony Calculator instruction</h1>
+    <h5>
+        Hey dear, Affinity Harmony Analyzer will ask you 14 questions to calculate compatablity
+        of Your partner and yourself.Rate yourself On a scale of 1 to 10
+        Kindly be Honest as possible to get an accurate Harmony
+    </h5>
+</div>
+<div class="container" id="calculatorPage">
 @using (Html.BeginForm("CalculatorScores","Calculator", "CalculatorUser", FormMethod.Post))
  {
-     <h2>Harmony Calculator instruction</h2>
-        <label>
-            Hey dear, Affinity Harmony Analyzer will ask you 14 questions to calculate compatablity
-            of Your partner and yourself.<br>Rate yourself On a scale of 1 to 10
-            Kindly be Honest as possible to get an accurate Harmony
-        </label><br>
+       <br>
         <label for="q1">Are you Male or Female?</label><br>
     <select name="Gender"id="q1">
         <option value="Male">Male</option>
@@ -65,6 +68,7 @@
 
     <button type="submit" id="loginbutton">Calculator Scores</button>
 }
+</div>
 
 
 

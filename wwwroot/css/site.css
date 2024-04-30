@@ -19,20 +19,16 @@
 
 body {
     /*display: block; /*add this*/
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     color: yellow;
     background-color: darkred;
-     /*background-image: url(/Images/rose.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: repeat;*/
+     
    
 }
 
 .bf-banner .banner-content {
     align-items: center;
     color: yellow;
-    /*background-image: url(/Images/rose.jpg);*/
     background-position: center;
     background-size: cover;
     background-repeat: repeat;
@@ -76,9 +72,7 @@ body {
 #book-one {
     width: 300px;
     height: 250px;
-    
     display: flex;
-    
     color: rgba(65,62,83,.5);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     line-height: 1.2;
@@ -95,7 +89,6 @@ body {
 
 #book-two {
     display: flex;
-    
     color: rgba(65,62,83,.5);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     width: 300px;
@@ -106,8 +99,6 @@ body {
     font-size: 14px;
     font-weight: 400;
     background-color: white;
-    
-   
 }
 
 .blog-content {
@@ -116,51 +107,83 @@ body {
         flex-shrink: 1; /*to shrick the size of the blog in smaller screen*/
 }
 
-
-
-#container-fluid { /*This is to style the calculator*/
-    font-display: block;  
-    background-image: url(/Images/Lovecalbackgroud.png);
-    background-position: center;
-    background-size: cover;
+#calculatortext {
+    text-align: center;
 }
 
+#calculatorVideo { /*This is to style the calculator*/
 
-    #loginpage{ /*This is to style the two login botton on home page*/
-       
-        
-    }
+    text-align: center;
+    border: hidden;
 
-#Hometopnav {
-    
-    
-   
+}
+/*styling my labels and forms*/
+label{
+    display:block;
+    margin-bottom: 5px;
+    font-weight: bold;
 }
 
-    a {
-        /* defines the style 
+input[type="number"]{
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"]{
+    background-color: yellow;
+    color: darkred;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#myFirstVideo {
+    border-radius: 80px;
+    
+}
+
+.display-8{
+    text-align: center;
+    text-decoration:wavy;
+    text-emphasis-color: white;
+}
+
+#blogVideo {
+    text-align: center;
+    border: hidden;
+}
+
+#mysecondVideo {
+    border-radius: 80px;
+}
+
+a {
+    /* defines the style 
         unvisited links */
 
-        color: black;
-        font-family: 'Georgia', serif;
-        text-decoration: none; /*used this to remove the line in the links*/
-    }
+    color: yellow;
+    font-family: 'Georgia', serif;
+    text-decoration: none; /*used this to remove the line in the links*/
+}
 
 
         a:hover {
             /* a link is hovered when
         the mouse is over it */
 
-            color: yellow;
+            color: red;
             
         }
 
-        a:active {
-            /* click on the link but hasn't 
+    a:active {
+        /* click on the link but hasn't 
         released the mouse button yet */
 
-            color: yellow;
-        }
+        color:  yellow;
+    }
 
     #Hometopnav { /*Here is the css style for my home page top nav style*/
 
@@ -199,8 +222,13 @@ body {
     text-align: center;
 }
 
-
-
+#calculatorPage {
+    background-color: white;
+    color: darkred;
+    border-radius: 40px;
+    text-align: center;
+    font-size: large;
+}
 /* This is for the Login page and the login button*/
 #loginbutton {
     padding: 10px 20px;
@@ -208,8 +236,8 @@ body {
     margin: 30px;
     border: none;
     border-radius: 5px;
-    background-color: #3498DB;
-    color: #FFFFFF;
+    background-color: darkred;
+    color: yellow;
     transition: transform 1s;
 }
 
@@ -248,7 +276,7 @@ body {
     left: 50%;
    transform: translate(-50%, -50%);
     color: darkred; /* Text color */
-    font-size: 30px; /* Adjust font size as needed */
+    font-size: 31px; /* Adjust font size as needed */
     white-space: nowrap; /* Prevent text from wrapping */
     /*animation: moveWelcome 3s linear infinite; /* Animation for moving the welcome message */
 }
@@ -259,7 +287,7 @@ body {
     left: 10%;
     transform: translate(-50%, -50%);
     color: darkred; /* Text color */
-    font-size: 20px; /* Adjust font size as needed */
+    font-size: 19px; /* Adjust font size as needed */
     white-space: nowrap; /* Prevent text from wrapping */
     animation: moveWelcome 7s linear infinite; /* Animation for moving the welcome message */
 }
@@ -273,4 +301,51 @@ body {
     100% {
         transform: translate(calc(-50% + 100vw), -50%); /* Move the message to the right end of the viewport */
     }
+}
+/*Here is for the blog styping*/
+#blogsummary{
+    text-align: center;
+}
+#postContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.post {
+    width: 300px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+    .post img {
+        max-width: 100%;
+        height: auto;
+    }
+
+#aboutPage {
+    background-color: white;
+    color: darkred;
+    font-size: large;
+    border-radius: 20px;
+    text-align: center;
+    border: hidden;
+    margin: 0;
+}
+
+#privacyPage {
+    color: darkred;
+    font-size: large;
+    background-color: white;
+    border-radius: 20px;
+    border: hidden;
+    margin: 0;
+    text-align: center;
 }

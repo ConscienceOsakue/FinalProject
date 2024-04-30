@@ -11,7 +11,7 @@
         <a href="https://www.amazon.com/stores/author/B0BQVLHMSX/allbooks?ingress=0&visitId=d80fdb98-ca9a-41fc-9952-6d6f565612fe&ref_=ap_rdr">Shop Our Books Here</></a>
     </div>
     </div>
-        <main>
+
             <main class="containe" id="store">
             <div class="container-fluid" id="book-one">
             <a href="https://a.co/d/91KrlQx"><img id="book-one-img" src="/Images/TrophyGirlfriendfullHomepage.PNG" height="200" width="300" alt="" name="#" x-on:click.prevent="activeCategory = 'Women'" x-bind:class="activeCategory == 'Women' ? 'active' : ''"><h3>For Women</h3></a>
@@ -26,26 +26,39 @@
                     </div>
                     </div>
             </main>
-    
-    <div class="text-lg-center">
-    <div class="container-fluid" >
-
-         <h3 class="display-8" id="calculator">Love Calculator</h3> <!--Added Id here to style the calculator-->
-        <a href="/Calculator/Index/" target="_blank"> <!--Added a link to the video and nested the video inside the link-->
-        <video id="myFirstVideo" controls autoplay width="950" height="400">
-                <source src="/Videos/Love Calculator.mp4" type="video/mp4" onclick='width=500'>
-                <source src="/Videos/Love Calculator.ogg" type="video/ogg" onclick='width=500'>
-                <source src="/Videos/Love Calculator.webm" type="video/webm" onclick='width=500'>
-            Your browser does not support the video tag.
-        </video>
-         
+            <div>
+                <div></div>
+            </div>
+            <main>
+        <!--Added Id here to style the calculator-->
+            <div id="calculatorVideo">
+            <h1 class="display-8" id="calculator">Love Calculator</h1>
+            <h3>
+                Discover our unique Affinity Harmony Calculator, a tool 
+                designed to assess and reflect on the health of your relationship.
+                Answer a few simple questions, and receive personalized insights and 
+                suggestions to strengthen your bond with your partner, family, or friends.
+            </h3>
+                    <a href="/Calculator/Index/">
+                <video id="myFirstVideo" controls autoplay width="950" height="500">
+                    <source src="/Videos/Love Calculator.mp4" type="video/mp4" onclick='width=500'>
+                    <source src="/Videos/Love Calculator.ogg" type="video/ogg" onclick='width=500'>
+                    <source src="/Videos/Love Calculator.webm" type="video/webm" onclick='width=500'>
+                    Your browser does not support the video tag.
+                </video>
         </a>
         </div>
-        </div>
-        <p>
-
-        </p>
+        </main>
         <div>
+            <div></div>
+        </div>
+        <main>
+        <div id="blogVideo">
+            <h1 class="display-8">Visit Our Blog</h1>
+            <h4>Dive into our Chronicle, where we share insightful articles,
+                personal stories, and practical tips on navigating the complexities of relationships
+                from a Christian perspective. Chronicle Of Elysian Bonds is a space for reflection, learning, 
+                and growth as we explore the joys and challenges of living out Christ's love in our connections with others.</h4>
             <a href="/Blog/Index/" target="_blank">
             <video id="mysecondVideo" controls autoplay width="1150" height="450">
                     <source src="/Videos/Relationship Blog (1).mp4" type="video/mp4">
@@ -76,13 +89,11 @@
 </main>
 <footer id="Fill-footer">
     <div class="container-3 mx-auto">
-        <ul class="footer-links">
-            <li><a class="btn href=/aboutpage"></a></li>
+        <div class="footer-links">
+            <div><a class="btn href=/aboutpage"></a></div>
 
-        </ul>
+        </div>
     </div>
 </footer>
-    <!--<h1 class="display-3">Welcome To Emmcn Orb</h1>-->
-    <!--<p>Dive into our Blog <a href= "http://localhost:11008/Identity/Account/Login?ReturnUrl=%2FBlog">Navigating relationships from a Christian perspective</a></></p>-->
 </body>
 </html>

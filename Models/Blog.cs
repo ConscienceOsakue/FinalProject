@@ -12,11 +12,10 @@ namespace FinalProject.Models
             public int PostId { get; set; }
 
             [Required]
-            public string PostTitle { get; set; }
+            public required string PostTitle { get; set; }
             [Required]
-            public string PostContent { get; set; }
-            public string? PostAuthor { get; set; }
-        //The  public IEnumerable<ChronicleEBPost> ChronicleEBlogPost { get; set; } was removed
+            public required string PostContent { get; set; }
+            public required string PostAuthor { get; set; }
     }
 }
 

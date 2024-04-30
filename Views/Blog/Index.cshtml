@@ -1,14 +1,20 @@
 ﻿<!-- Index.cshtml -->
 @model IEnumerable<Blog>
-
+<head>
 <!--this this the view page that will display the blog post.-->
-<h1>Chronicles of E Bond</h1>
-
+<title>Chronicles of E Bond</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<div>
+    <h3 class="blogtitlesum" id="blogsummary"><b>Dive into our Blog</b><br> We share  personal stories, practical tips on navigating the complexities of relationships.<br>
+        Here is a space for reflection, learning, and growth.</h3>
+</div>
+<body>
 @foreach (var blog in @Model)
 {
-    <div>
+    <div class="container" id="postContainer">
         <h2>@blog.PostTitle</h2>
-        <p>@blog.PostAuthor</p>
+       <p>@blog.PostAuthor</p>
         <p>@blog.PostContent</p>
         @if(User.IsInRole("Admin"))
         {
@@ -20,8 +26,11 @@
        
     </div>
 }
+</body>
+<footer class="blogpage" id="blogdelete">
 @if (User.IsInRole("Admin"))
 {
     @Html.ActionLink("Create New Post", "Blog") <!--Here "ChronicleEBPost" to replace "Create" that was here before-->
 }
+</footer>
 

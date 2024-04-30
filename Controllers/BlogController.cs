@@ -32,7 +32,7 @@ namespace FinalProject.Controllers
             if (ModelState.IsValid)
             {
                 var user = await _userManager.GetUserAsync(User);
-                blogToInsert.PostAuthor = user.Email;
+                string postAuthor = blogToInsert.PostAuthor;
                 _repo.InsertBlog(blogToInsert);
             } 
             else
