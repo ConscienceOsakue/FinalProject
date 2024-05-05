@@ -46,11 +46,11 @@ namespace FinalProject.Controllers
 
             double userselfScore = UserSelfScores(userself);
             double userSumPatnerSelf = AHAnalyzerUserPartnerScores(ahanalyzeruserpartner) + UserSelfScores(userself);
-
+            
 
 
             //ensuring the female score is not more than the male by checking for true.
-            if ((ahanalyzeruserpartner.Gender == Gender.Female && ahanalyzeruserpartnerScore >= 25) || ahanalyzeruserpartnerScore == userselfScore)  
+            if ((ahanalyzeruserpartner.Gender == Gender.Male && ahanalyzeruserpartnerScore >= 45) || ahanalyzeruserpartnerScore == userselfScore)  
             {
 
                 // Calculate average score
@@ -62,7 +62,7 @@ namespace FinalProject.Controllers
                 return View("CalculatorScores");
 
             }
-            if ((ahanalyzeruserpartner.Gender == Gender.Male && ahanalyzeruserpartnerScore >= 15) || ahanalyzeruserpartnerScore == userselfScore)
+            if ((ahanalyzeruserpartner.Gender == Gender.Female && ahanalyzeruserpartnerScore >= 35) || ahanalyzeruserpartnerScore == userselfScore)
             {
                 double userAverageScore = Math.Round(userSumPatnerSelf / 140 * 100);
 
