@@ -12,7 +12,7 @@ using static FinalProject.Models.Calculator;
 namespace FinalProject.Controllers
 {
     //Creating a controller that handles the user requests and response for the AHA calculation
-    
+    [Authorize]
     public class CalculatorController : Controller
     {
         private readonly ILogger<CalculatorController> _logger;
@@ -34,7 +34,7 @@ namespace FinalProject.Controllers
 
 
         //using this to view the page of the AH Calculator
-        [Authorize]
+        
         public IActionResult CalculatorScores(Calculator ahanalyzeruserpartner, CalculatorUser userself)
         {
 
